@@ -6,6 +6,7 @@ echo "GTKfindit -find what you need." > /root/GTKfindit/results.txt
 echo "Search:$FINDIT" >> /root/GTKfindit/results.txt
 echo "directory:$DIRECT" >> /root/GTKfindit/results.txt
 echo "searching, please wait..."
+echo "start time:$(date)" >>  /root/GTKfindit/results.txt
 echo "0" > /root/GTKfindit/counter.txt
 echo "0" > /root/GTKfindit/counter2.txt
 echo "" >> /root/GTKfindit/results.txt
@@ -21,6 +22,7 @@ done
 echo "" >> /root/GTKfindit/results.txt
 echo "" >> /root/GTKfindit/results.txt
 echo "end of search results for $FINDIT" >> /root/GTKfindit/results.txt
+echo "end time:$(date)" >>  /root/GTKfindit/results.txt
 echo "under $DIRECT and sub-directories" >> /root/GTKfindit/results.txt
 echo "GTKfindit found $(cat /root/GTKfindit/counter.txt) results" >> /root/GTKfindit/results.txt
 echo -e "in $(cat /root/GTKfindit/counter2.txt) directories." >> /root/GTKfindit/results.txt
