@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo "looking for: $1"
 
 WHEREAMI="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd && echo)"
